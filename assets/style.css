@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    margin-right: 40px;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* Home Section */
+section {
+    padding: 20px;
+}
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #333;
+    animation: pulseAnimation 2s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        background-color: #333;
+    }
+
+    100% {
+        background-color: #555;
+    }
+}
+
+.home-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.home-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.home-content {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-image {
+    flex: 1;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 600px;
+    height: 550px;
+    border-radius: 8px;
+    margin-left: 100px;
+}
+
+
+/* About */
+
+.about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    animation: pulseAnimation 2s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        background-color: #333;
+    }
+
+    100% {
+        background-color: #555;
+    }
+}
+
+.about-me,
+.about-education,
+.about-family {
+    margin-top: 20px;
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.about-me h2,
+.about-education h2,
+.about-family h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-me p,
+.about-education p,
+.about-family p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-me {
+    background-color: #f9f9f9;
+}
+
+.about-education {
+    background-color: #e0e0e0;
+}
+
+.about-family {
+    background-color: #dcdcdc;
+}
+
+#skills-body {
+    background-color: #333;
+    animation: pulseAnimation 2s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        background-color: #333;
+    }
+
+    100% {
+        background-color: #555;
+    }
+}
+
+/* Skills */
+.skills-section {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.progress-bar {
+    background-color: #f7d5d5;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: brown;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.progress:hover {
+    width: 100%;
+}
+
+/* Contact */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #333;
+    animation: pulseAnimation 2s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        background-color: #333;
+    }
+
+    100% {
+        background-color: #555;
+    }
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="https://www.pngarts.com/files/2/Letter-R-PNG-Pic.png" alt="Logo Image" class="logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contact me</h2>
+            <p>Email: roderick@gmail.com</p>
+            <p>Phone: 0999-999-999</p>
+            <p>Location: Fernando Air Base Lipa City Batangas</p>
+            <iframe style="height: 300px; width: 100%;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2508282532183!2d121.12284256494141!3d13.943543299999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6d0067bc86d5%3A0x4e1057a6816266c3!2sFernando%20Air%20Base%2C%20Lipa%20City%2C%20Batangas!5e0!3m2!1sen!2sph!4v1663912642459!5m2!1sen!2sph"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" onsubmit="enableSwal(); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function enableSwal() {
+            Swal.fire({
+                title: 'Thank you for contacting me',
+                text: 'Your request is submitting successfully',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>
